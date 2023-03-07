@@ -1,0 +1,62 @@
+/* Default Layout: Mobile Portrait */
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1400px;
+
+/* Desktop XS (Mobile Landscape) */
+@mixin break-xs {
+    @media (min-width: $xs) {
+        @content;
+    }
+}
+
+/* Desktop S (Tablet Landscape) */
+@mixin break-s {
+    @media (min-width: $sm) {
+        @content;
+    }
+}
+
+/* Desktop M */
+@mixin break-m {
+    @media (min-width: $md) {
+        @content;
+    }
+}
+
+/* Desktop L */
+@mixin break-l {
+    @media (min-width: $lg) {
+        @content;
+    }
+}
+
+/* Desktop XL */
+@mixin break-xl {
+    @media (min-width: $xl) {
+        @content;
+    }
+}
+
+/* Mobile Only */
+@mixin mobile-only {
+    @media (max-width: $xs) {
+        @content;
+    }
+}
+
+/* Mobile Landscape */
+@mixin mobile-wide {
+    @media (max-width: $sm) and (max-height: $xs) {
+        @content;
+    }
+}
+
+/* Tablet Portrait */
+@mixin tablet-tall {
+    @media (orientation: portrait) and (min-width: $xs) {
+        @content;
+    }
+}
