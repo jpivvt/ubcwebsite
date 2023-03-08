@@ -1,8 +1,12 @@
 @import "./variables";
+@import "./media";
 
 .container {
   margin: 0 auto;
-  width: 80vw;
+  width: 90vw;
+  @include break-m {
+    width: 80vw;
+  }
 
   h2 {
     margin-bottom: 0.5em;
@@ -13,6 +17,7 @@
 .container > :first-child { margin-top: 0; }
 
 .homepage {
+  $wm-width-mob: 90vw;
   $wm-width: 70vw;
 
   section {
@@ -31,16 +36,33 @@
     align-items: center;
     align-content: center;
 
-    background-color: rgba(0,0,0,0.75);
+    background: url(../../public/ubc_background_mobile.jpg) no-repeat;
+    background-position: 35% 0;
+    @include break-m {
+      background-position: center;
+    }
+    background-size: cover;
+
+    @include break-xl {
+      background: none;
+      background-color: rgba(0,0,0,0.75);
+    }
     color: white;
 
     .hero-content {
-      width: $wm-width;
+      width: $wm-width-mob;
+      @include break-m {
+        width: $wm-width;
+      }
     }
 
     .wordmark {
-      width: $wm-width;
-      height: calc($wm-width / 5.5);
+      width: $wm-width-mob;
+      height: calc($wm-width-mob / 5.5);
+      @include break-m {
+        width: $wm-width;
+        height: calc($wm-width / 5.5);
+      }
       position: relative;
 
       img { width: 100%; }
@@ -89,8 +111,12 @@
       align-items: center;
       align-content: center;
 
-      margin: 2em;
-      padding: 2em;
+      margin: 1em 0;
+      padding: 1em;
+      @include break-m {
+        margin: 2em;
+        padding: 2em;
+      }
       border-radius: .5em;
       background-color: white;
       text-align: center;
@@ -106,14 +132,29 @@
 
   section.peek {
     padding: 4em 0.5vw;
-    background: transparent;
+    background: url(../../public/ubc_background_slice.jpg) no-repeat top;
+    background-size: cover;
+
+    @include break-xl {
+      background: transparent;
+    }
   }
 
   section.sponsors {
     .sponsor-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 0.5em 1em;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5em;
+      @include break-s {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include break-l {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @include break-xl {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.5em 1em;
+      }
       justify-items: center;
       align-items: center;
       align-content: center;
@@ -131,8 +172,16 @@
 
       .sponsor-logo {
         position: relative;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
+        @include break-s {
+          width: 150px;
+          height: 150px;
+        }
+        @include break-xl {
+          width: 200px;
+          height: 200px;
+        }
 
         img { width: 100%; }
       }
@@ -151,10 +200,14 @@
   min-height: 50px;
   background-color: black;
   color: white;
+  font-size: 0.9em;
 
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @include break-m {
+      flex-direction: row;
+    }
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;

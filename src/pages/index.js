@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>UBC | Utah Baseball Club</title>
         <meta
           name="description"
-          content="UBC | Utah Baseball Club | South Jordan, West Jordan, Sandy, West Valley"
+          content="We are UBC. | Utah Baseball Club | South Jordan, West Jordan, Sandy, West Valley"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

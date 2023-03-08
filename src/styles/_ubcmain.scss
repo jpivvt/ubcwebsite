@@ -43,9 +43,10 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: black;
-  background: url(../../public/ubc_background.jpg) no-repeat fixed center;
-  background-size: cover;
+  @include break-xl {
+    background: url(../../public/ubc_background.jpg) no-repeat fixed center;
+    background-size: cover;
+  }
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
