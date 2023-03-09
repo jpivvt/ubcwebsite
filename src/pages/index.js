@@ -34,11 +34,16 @@ export default function Home() {
           <div className={styles.container}>
             <h2>We are UBC.</h2>
             <p>
-              Utah Baseball Club is an independent youth baseball organization
-              in Salt Lake Valley. Our program works to help our boys be ready
-              to play high school ball and further, but we also push them to be
-              better young men off the field.
+              The UBC program was built to help progress youth baseball in Utah.
             </p>
+            <p>
+              Coach Q started the program from scratch at the end of 2022 with
+              an idea&mdash;teaching the new way of baseball to local youth. Our
+              goal is to advance kids with baseball knowledge and prepare them
+              for a future in baseball and life. We expect not only for our
+              athletes to perform on the field but also off.
+            </p>
+            <p>Welcome to our website!</p>
           </div>
         </section>
         <section className={styles.news}>
@@ -99,24 +104,6 @@ export default function Home() {
               <div>
                 <div className={styles["sponsor-logo"]}>
                   <Image
-                    src="/sponsors/Larsen-Rico-Logo.png"
-                    alt="Larsen & Rico"
-                    fill
-                  />
-                </div>
-              </div>
-              <div>
-                <div className={styles["sponsor-logo"]}>
-                  <Image
-                    src="/sponsors/Poise-Dance-Logo.png"
-                    alt="Poise Dance"
-                    fill
-                  />
-                </div>
-              </div>
-              <div>
-                <div className={styles["sponsor-logo"]}>
-                  <Image
                     src="/sponsors/Built-Rite-Logo.png"
                     alt="Built-Rite"
                     fill
@@ -135,15 +122,19 @@ export default function Home() {
               <div>
                 <div className={styles["sponsor-logo"]}>
                   <Image
-                    src="/sponsors/Structured-Plus-Logo.png"
-                    alt="Structured Plus Communications Inc."
+                    src="/sponsors/Larsen-Rico-Logo.png"
+                    alt="Larsen & Rico"
                     fill
                   />
                 </div>
               </div>
               <div>
                 <div className={styles["sponsor-logo"]}>
-                  <Image src="/sponsors/Servpro-Logo.png" alt="Servpro" fill />
+                  <Image
+                    src="/sponsors/Poise-Dance-Logo.png"
+                    alt="Poise Dance"
+                    fill
+                  />
                 </div>
               </div>
               <div>
@@ -153,6 +144,11 @@ export default function Home() {
                     alt="Reading Pediatric Dentistry"
                     fill
                   />
+                </div>
+              </div>
+              <div>
+                <div className={styles["sponsor-logo"]}>
+                  <Image src="/sponsors/Servpro-Logo.png" alt="Servpro" fill />
                 </div>
               </div>
               <div>
@@ -167,6 +163,15 @@ export default function Home() {
               <div>
                 <div className={styles["sponsor-logo"]}>
                   <Image
+                    src="/sponsors/Structured-Plus-Logo.png"
+                    alt="Structured Plus Communications Inc."
+                    fill
+                  />
+                </div>
+              </div>
+              <div>
+                <div className={styles["sponsor-logo"]}>
+                  <Image
                     src="/sponsors/SWCA-Logo.png"
                     alt="Surgical Wound Care Associates"
                     fill
@@ -174,22 +179,22 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <span className={styles["no-logo"]}>Ann & Francis Pryor</span>
+                <span className={styles["no-logo"]}>Al & Johie Rico</span>
               </div>
               <div>
-                <span className={styles["no-logo"]}>Tom & Libbie Hamann</span>
+                <span className={styles["no-logo"]}>Ann & Francis Pryor</span>
               </div>
               <div>
                 <span className={styles["no-logo"]}>Celine MacDonald</span>
               </div>
               <div>
+                <span className={styles["no-logo"]}>Dom Building</span>
+              </div>
+              <div>
                 <span className={styles["no-logo"]}>Dom Construction</span>
               </div>
               <div>
-                <span className={styles["no-logo"]}>Al & Johie Rico</span>
-              </div>
-              <div>
-                <span className={styles["no-logo"]}>Dom Building</span>
+                <span className={styles["no-logo"]}>Tom & Libbie Hamann</span>
               </div>
             </div>
           </div>

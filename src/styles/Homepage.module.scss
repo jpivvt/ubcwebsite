@@ -151,10 +151,6 @@
       @include break-l {
         grid-template-columns: repeat(4, 1fr);
       }
-      @include break-xl {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 0.5em 1em;
-      }
       justify-items: center;
       align-items: center;
       align-content: center;
@@ -175,8 +171,16 @@
         width: 100px;
         height: 100px;
         @include break-s {
+          width: 125px;
+          height: 125px;
+        }
+        @include break-m {
           width: 150px;
           height: 150px;
+        }
+        @include break-l {
+          width: 175px;
+          height: 175px;
         }
         @include break-xl {
           width: 200px;
