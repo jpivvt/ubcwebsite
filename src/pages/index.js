@@ -13,6 +13,12 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Head>
       <header></header>
       <main className={styles.homepage}>
